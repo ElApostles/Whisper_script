@@ -25,6 +25,19 @@ git clone https://github.com/yourusername/whisper_script.git
 cd whisper_script
 ```
 
+3. Make .env
+Create a .env file in the root directory of your project. You can do this using a text editor, or by running the following command in your terminal:
+```bash
+touch .env
+```
+
+2. Adding the OPENAI_API_KEY
+Open the .env file using a text editor of your choice, and add the following line:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
+Replace your_openai_api_key_here with your actual OpenAI API key.
+
 ### Usage
 
 To transcribe an audio file, follow the steps below:
