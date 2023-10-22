@@ -8,39 +8,38 @@ Whisper_Script provides a streamlined and user-friendly interface to interact wi
 
 Ensure that you have the following prerequisites installed and configured on your system:
 
-    Bash
-    OpenAI CLI
-    Whisper API Key
+Bash
+[OpenAI API Key](https://platform.openai.com/docs/api-reference/authentication)
 
 ### Installation
 
-    1. Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/whisper_script.git
 ```
 
-    2. Navigate to the project directory:
+2. Navigate to the project directory:
 
 ```
-    cd whisper_script
+cd whisper_script
 ```
 
 ### Usage
 
 To transcribe an audio file, follow the steps below:
 
-    1. Place your audio file in the desired directory.
+1. Place your audio file in the desired directory.
 
-    2. Open your terminal and run the following command:
+2. Open your terminal and run the following command:
 
 ```bash
-    bash transcript.sh <infile_name>
+bash transcript.sh <file_name>
 ```
 
-    - Replace <infile_name> with the name of your audio file.
+- Replace <infile_name> with the name of your audio file.
 
-    3. Upon successful execution, the transcribed text will be saved in the output directory, with the filename format: {FILENAME}.txt.
+3. Upon successful execution, the transcribed text will be saved in the output directory, with the filename format: {FILENAME}.txt.
 
 ## Support
 
