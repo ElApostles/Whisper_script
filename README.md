@@ -34,7 +34,7 @@ touch .env
 2. Adding the OPENAI_API_KEY
 Open the .env file using a text editor of your choice, and add the following line:
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=<your_openai_api_key_here>
 ```
 Replace your_openai_api_key_here with your actual OpenAI API key.
 
