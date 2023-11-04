@@ -24,8 +24,8 @@ init_env() {
   # Create the output file name
   output_file="output/$base_name.txt"
 
-  # TODO: if -p arg exist, replace with this.
-  prompt="$(cat prompt/prompt.txt)"
+  # # TODO: if -p arg exist, replace with this.
+  # prompt="$(cat prompt/prompt.txt)"
 }
 
 transcript() {
