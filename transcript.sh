@@ -2,10 +2,10 @@
 set -uex
 
 init_env() {
-	set -a
-	source .env
-	set +a
-
+	if [ ! -f .env ]; then
+	  echo "Error: env file does not exist"
+	  exit 1;
+	fi
   # Get the file path from command line arguments
   input_file="$@"
 
@@ -14,6 +14,12 @@ init_env() {
     echo "Error: File not found - $input_file"
     exit 1
   fi
+
+	set -a
+	source .env
+	set +a
+
+  mkdir -p output
 
   # Get the file's base name (remove path)
   base_name=$(basename "$input_file")
@@ -38,7 +44,6 @@ curl https://api.openai.com/v1/audio/transcriptions \
 }
 
 _main() {
-  mkdir -p output
 	init_env "$@"
 	transcript "$input_file" "$output_file"
 }
